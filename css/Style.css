@@ -1,0 +1,125 @@
+/* --- Globales --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navegación (Header) --- */
+#nav-contenedor {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 50px; 
+    width: auto;
+    object-fit: contain;
+}
+#nav-enlaces {
+    display: flex;
+    gap: 25px;
+}
+
+#nav-enlaces a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#nav-enlaces a:hover {
+    color: #007bff; /* Un azul para el hover le da vida */
+    font-weight: 600;
+}
+
+/* --- Secciones de Catálogo --- */
+#menu-cat {
+    width: 100%;
+    max-width: 1200px; /* Evita que crezca demasiado en pantallas gigantes */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#menu-catalogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Importante para que se ajuste en móviles */
+    gap: 40px; /* 200px era demasiado espacio, 40px es más estándar */
+    padding: 40px 20px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-item img {
+    height: 150px;
+    width: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.05);
+}
+
+/* --- Productos de Mayor Demanda --- */
+#mayor-demanda {
+    max-width: 100%; /* Ajuste responsivo */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* --- Pie de Página (Footer) --- */
+#menu-fin {
+    background-color: #c5afaf;
+    color: #000000; /* Texto blanco para que se lea sobre gris oscuro */
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.menu-fin-creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menu-fin-creditos b, 
+.menu-fin-creditos strong {
+    color: #f1f1f1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-fin-creditos i, 
+.menu-fin-creditos p {
+    font-style: normal;
+    margin: 0;
+}
+
+#menu-beneficios {
+    background-color:rgb(238, 233, 234); /* b Toma el color de fondo claro de la página (bg-light) */
+    color: #333333; /* Gris oscuro elegante para el texto, no negro puro 
+    padding: 40px 20px;
+    margin-top: 20px;*/
+    height: 40%; /* Es mejor usar 'auto' en lugar de un % fijo para que sea responsivo */
+}

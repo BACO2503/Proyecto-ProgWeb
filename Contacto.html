@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Contacto - Proterma</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+<header id="nav-contenedor" class="container-fluid py-2 shadow-sm bg-white sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-white container">
+
+        <a class="navbar-brand p-0" href="index.html">
+            <img src="images/protermaIcono.png" id="logo" height="50" alt="Logo Proterma"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-enlaces-proterma" aria-controls="nav-enlaces-proterma" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav-enlaces-proterma">
+            <ul class="navbar-nav mt-3 mt-md-0 gap-3 text-center text-md-start">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Página Principal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="Catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fw-bold" href="Contacto.html" style="color: #d63384 !important;">Contacto</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main class="flex-grow-1">
+        <section class="container-fluid p-0 mb-5">
+            <img src="images/MenuCat.png" class="img-fluid w-100" alt="Banner Principal" style="max-height: 400px; object-fit: cover;"/>
+        </section>
+
+        <section class="container py-4 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <div class="card shadow-sm border-0" style="background-color: #ffffff;">
+                        <div class="card-body p-md-5">
+                            
+                            <h2 class="display-6 fw-bold mb-3" style="color: #000000;">Contáctanos</h2>
+                            <p class="text-muted mb-5">Para brindarte atención personalizada compártenos tus datos y pronto te contactaremos.</p>
+                            
+                            <form>
+                                <div class="row g-4"> 
+                                    
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label text-muted">Nombre y Apellido <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control bg-light border-0 py-2" id="nombre" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="telefono" class="form-label text-muted">Teléfono <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control bg-light border-0 py-2" id="telefono" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label text-muted">Email <span class="text-danger">*</span></label>
+                                        <input type="email" class="form-control bg-light border-0 py-2" id="email" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="interes" class="form-label text-muted">Interesado en</label>
+                                        <select class="form-select bg-light border-0 py-2" id="interes">
+                                            <option selected disabled>Líneas</option>
+                                            <option value="mesas">Mesas</option>
+                                            <option value="escritorios">Escritorios</option>
+                                            <option value="bancos">Bancos</option>
+                                            <option value="zapateros">Zapateros</option>
+                                            <option value="pedido_especial">Pedido Personalizado</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label text-muted">Tu mensaje</label>
+                                        <textarea class="form-control bg-light border-0" id="mensaje" rows="4"></textarea>
+                                    </div>
+                                    
+                                    <div class="col-12 mt-4 text-center text-md-start">
+                                        <button type="submit" class="btn text-white px-5 py-2" style="background-color: #5D4037; border-radius: 6px;">Enviar</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="menu-fin">
+        <div class="container text-center text-secondary">
+            <p class="mb-0">&copy; 2024 Proterma SA de CV - Todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

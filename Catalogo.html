@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Catálogo - Proterma</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+    <header id="nav-contenedor" class="container-fluid py-2 shadow-sm bg-white sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-white container">
+            
+            <a class="navbar-brand p-0" href="index.html">
+                <img src="images/protermaIcono.png" id="logo" height="50" alt="Logo Proterma"/>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-enlaces-proterma" aria-controls="nav-enlaces-proterma" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="nav-enlaces-proterma">
+                <ul class="navbar-nav mt-3 mt-md-0 gap-3 text-center text-md-start">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Página Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="historia.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="Catalogo.html" style="color: #d63384 !important;">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow-1">
+        <section class="container-fluid p-0 mb-5">
+            <img src="images/MenuCat.png" class="img-fluid w-100" alt="Banner Principal" style="max-height: 400px; object-fit: cover;"/>
+        </section>
+
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="display-6 fw-bold" style="color: #5D4037;">Nuestro Catálogo</h2>
+                <p class="text-muted">Explora nuestra colección completa de mobiliario minimalista.</p>
+            </div>
+            
+            <ul class="nav justify-content-center mb-5 gap-2 gap-md-4">
+                <li class="nav-item">
+                    <a class="nav-link active rounded-pill px-4 text-white" style="background-color: #5D4037;" href="#">Todo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Mesas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Escritorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Bancos</a>
+                </li>
+            </ul>
+
+            <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="cuerpo-cards">
+                
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/mesa1.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Mesa de Comedor Rectangular</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Mesa robusta ideal para mantener la estética minimalista.<br>
+                                <strong>Medida:</strong> 240 x 110 x 75 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/escritorio1.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Mesa de trabajo con librero</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Classic home con refuerzos estructurales.<br>
+                                <strong>Medida:</strong> 120 x 60 x 145 cm.<br>
+                                <strong>Material:</strong> Madera de pino estufada.<br>
+                                <strong>Acabados:</strong> Tinte color caoba mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/banco1.jpg" class="card-img-top p-3" alt="Banco de bar natural nórdico" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Banco de bar nórdico</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Diseño natural que respeta la estética minimalista.<br>
+                                <strong>Medida:</strong> 30 cm (diámetro) x 75 cm.<br>
+                                <strong>Material:</strong> Madera de pino.<br>
+                                <strong>Acabados:</strong> Sellador transparente base agua.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/escritorio3.jpg" class="card-img-top p-3" alt="Escritorio de oficina" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Escritorio de oficina</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Escritorio de oficina.<br>
+                                <strong>Medida:</strong> 120 x 60 x 75 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/banco2.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Silla de madera</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Silla de oficina.<br>
+                                <strong>Medida:</strong> 50 x 50 x 80 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/mesa4.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div  class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Mesa de comedor</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Mesa de comedor rectangular robusta.<br>
+                                <strong>Medida:</strong> 200 x 100 x 75 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/mesa3.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div  class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Mesa de comedor 3</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Mesa de comedor rectangular robusta.<br>
+                                <strong>Medida:</strong> 200 x 100 x 75 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/banco3.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Banco de madera</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Silla de oficina.<br>
+                                <strong>Medida:</strong> 50 x 50 x 80 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/escritorio2.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Escritorio de trabajo</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Classic home con refuerzos estructurales.<br>
+                                <strong>Medida:</strong> 120 x 60 x 145 cm.<br>
+                                <strong>Material:</strong> Madera de pino estufada.<br>
+                                <strong>Acabados:</strong> Tinte color caoba mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer id="menu-fin">
+        <div class="container text-center text-secondary">
+            <p class="mb-0">&copy; 2024 Proterma SA de CV - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

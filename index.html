@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Inicio - Proterma</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header id="nav-contenedor" class="container-fluid py-2 shadow-sm bg-white sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-white container">
+      
+      <a class="navbar-brand p-0" href="index.html">
+        <img src="images/protermaIcono.png" id="logo" height="50" alt="Logo Proterma"/>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-enlaces-proterma" aria-controls="nav-enlaces-proterma" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="nav-enlaces-proterma">
+        <ul class="navbar-nav mt-3 mt-md-0 gap-3 text-center text-md-start">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="index.html" style="color: #d63384 !important;">Página Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="Catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="flex-grow-1">
+    
+    <section class="container-fluid p-0 mb-5">
+      <img src="images/MenuCat.png" class="img-fluid w-100" alt="Banner Principal" style="max-height: 400px; object-fit: cover;"/>
+    </section>
+
+    <section id="menu-catalogo" class="container py-4">
+      <div class="row text-center g-4 justify-content-center">
+        <div class="col-6 col-md-3">
+          <img src="images/M1.png" alt="Mesas" class="img-fluid mb-2" style="max-height: 120px;" />
+          <p class="fst-italic text-muted">Mesas</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/M2.png" alt="Escritorios" class="img-fluid mb-2" style="max-height: 120px;" />
+          <p class="fst-italic text-muted">Escritorios</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/M3.png" alt="Bancos" class="img-fluid mb-2" style="max-height: 120px;" />
+          <p class="fst-italic text-muted">Bancos</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="images/M4.png" alt="Zapateros" class="img-fluid mb-2" style="max-height: 120px;" />
+          <p class="fst-italic text-muted">Zapateros</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-5"><hr class="text-muted" style="opacity: 0.1;"/></div>
+
+    <section class="container my-5 py-5" style="background-color: #f8f9fa; border-radius: 4px;">
+        <div class="row align-items-center px-4 px-md-5">
+            
+            <div class="col-md-5 mb-5 mb-md-0">
+                <h2 class="h1 fw-light mb-1" style="color: #333; letter-spacing: -1px;">
+                    PROTERMA | <span class="fw-normal">Catálogo 2026</span>
+                </h2>
+                <p class="text-muted mb-4">Lanzamiento exclusivo</p>
+                
+                <a href="Catalogo.html" class="text-dark text-decoration-underline fw-bold" style="text-underline-offset: 8px;">
+                    Explorar la colección
+                </a>
+            </div>
+
+            <div class="col-md-7 text-end position-relative">
+                <div id="visualizadorColeccion" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner shadow-lg bg-white">
+                        <div class="carousel-item active" data-bs-interval="3500">
+                            <img src="images/Productos/mesa1.jpg" class="d-block w-100 p-3" alt="Mesa de Comedor Rectangular Robusta" style="max-height: 450px; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="images/Productos/escritorio1.jpg" class="d-block w-100 p-3" alt="Mueble de TV" style="max-height: 450px; object-fit: contain;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3500">
+                            <img src="images/Productos/banco3.jpg" class="d-block w-100 p-3" alt="Mueble de TV" style="max-height: 450px; object-fit: contain;">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end align-items-center mt-3 gap-4">
+                        <span class="text-muted small">1 / 3</span>
+                        <div class="btn-group">
+                            <button class="btn btn-link p-0 text-dark text-decoration-none fs-3" type="button" data-bs-target="#visualizadorColeccion" data-bs-slide="prev">
+                                &larr;
+                            </button>
+                            <button class="btn btn-link p-0 text-dark text-decoration-none fs-3 ms-3" type="button" data-bs-target="#visualizadorColeccion" data-bs-slide="next">
+                                &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <div id ="menu-beneficios">
+    <section class="container my-5 py-4">
+      <div class="text-center mb-5 position-relative">
+        <h2 class="fw-bold mb-3" style="color: #5D4037; font-size: 2rem; letter-spacing: 1px;">
+          Nuestros Beneficios
+        </h2>
+        <div style="width: 150px; height: 3px; background-color: #d63384; margin: 0 auto;"></div>
+      </div>
+
+      <div class="row text-center g-4 justify-content-center">
+        
+        <div class="col-sm-6 col-md-3">
+          <div class="d-flex flex-column align-items-center px-2">
+            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 130px; height: 130px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#5D4037" class="bi bi-table" viewBox="0 0 16 16">
+                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm1 1v1h14V3zm0 2v9h3V5zm4 0v9h6V5zm7 0v9h3V5z"/>
+              </svg>
+            </div>
+            <h4 class="fw-bold h6 text-uppercase mb-2" style="color: #333; letter-spacing: 0.5px;">Diseño Minimalista</h4>
+            <p class="text-muted small">Líneas simples y elegantes en madera, fabricadas para mantener una estética limpia en tu hogar.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="d-flex flex-column align-items-center px-2">
+            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 130px; height: 130px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#5D4037" class="bi bi-tools" viewBox="0 0 16 16">
+                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968a3.953 3.953 0 0 0 .445.383L11.2 15l1-1-.138-2.613a3.992 3.992 0 0 0-.383-.445l-.968-.968 2.617-2.617a3 3 0 0 0 .851-5.878L13 0l-1 1 2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 10 11a3 3 0 1 0 5.878-.851l2.654-2.617.968.968a3.953 3.953 0 0 0 .445.383L11.2 15l1-1-.138-2.613a3.992 3.992 0 0 0-.383-.445l-.968-.968 2.617-2.617a3 3 0 0 0 .851-5.878L13 0l-1 1-2.2 3.081a1 1 0 0 0-.814.419h-.071a1 1 0 0 1-.707.293L5.513 4.227l2.617-2.617A3 3 0 0 0 7.279.76L5.878 1.15A3.003 3.003 0 0 0 1 0"/>
+              </svg>
+            </div>
+            <h4 class="fw-bold h6 text-uppercase mb-2" style="color: #333; letter-spacing: 0.5px;">Calidad Duradera</h4>
+            <p class="text-muted small">Estructuras robustas de nogal, roble, cedro y parota seleccionadas bajo estrictos estándares.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="d-flex flex-column align-items-center px-2">
+            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 130px; height: 130px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#5D4037" class="bi bi-ruler" viewBox="0 0 16 16">
+                <path d="M5.5 11a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0-2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0-2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0-2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1zm0-2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z"/>
+                <path d="M2.5 0a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5zm.5 1h2v14H3zm3 0h7v14H6z"/>
+              </svg>
+            </div>
+            <h4 class="fw-bold h6 text-uppercase mb-2" style="color: #333; letter-spacing: 0.5px;">A Pedido</h4>
+            <p class="text-muted small">Adaptamos dimensiones y acabados de forma personalizada a través de nuestro formulario técnico.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="d-flex flex-column align-items-center px-2">
+            <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 130px; height: 130px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#5D4037" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>
+            </div>
+            <h4 class="fw-bold h6 text-uppercase mb-2" style="color: #333; letter-spacing: 0.5px;">Venta Presencial</h4>
+            <p class="text-muted small">Visítanos en la CDMX para conocer físicamente texturas, acabados y recibir asesoría experta.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </div>
+    <section class="container my-5 py-4">
+  <div class="bg-white rounded p-4 p-md-5 shadow border-0">
+    <div class="row align-items-center">
+      
+      <div class="col-md-7 mb-4 mb-md-0">
+        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg" style="border: 1px solid #eaeaea;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.3423!2d-98.958750!3d19.322361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE5JzIwLjUiTiA5OMKwNTcnMzEuNSJX!5e0!3m2!1ses!2smx!4v1715621000000!5m2!1ses!2smx" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-md-5 text-center text-md-start px-md-4">
+        <h2 class="fw-bold mb-3 display-6" style="color: #5D4037;">Ven a visitarnos</h2>
+        <div style="width: 80px; height: 3px; background-color: #d63384;" class="mx-auto mx-md-0 mb-4"></div>
+        
+        <p class="text-muted mb-4">
+            Visítanos en nuestra ubicación física para conocer la calidad de nuestros muebles y recibir asesoría personalizada en el diseño de tus espacios.
+        </p>
+
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#d63384" class="bi bi-geo-alt-fill me-3" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          <span class="text-dark fw-medium text-start">Eje 10 Sur, Mz 5 Lt8<br>Santa Catarina Yecahuitzotl, CDMX</span>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#d63384" class="bi bi-telephone-fill me-3" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          <span class="text-dark fw-medium">5558601104</span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer id="menu-fin" class="py-5 border-top mt-auto" style="background-color: #dbd0d3;">
+    <div class="container">
+      <div class="row text-center text-md-start text-secondary">
+        
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong class="text-dark d-block mb-2">Diseñado por</strong>
+          <p class="mb-0">Sis</p>
+        </div>
+        
+        <div class="col-md-4 mb-4 mb-md-0">
+          <strong class="text-dark d-block mb-2">Contacto</strong>
+          <p class="mb-1">56-17-60-24-96</p>
+          <a href="mailto:abc@gmail.com" class="text-decoration-none text-secondary">abc@gmail.com</a>
+        </div>
+        
+        <div class="col-md-4">
+          <strong class="text-dark d-block mb-2">Redes sociales</strong>
+          <p class="mb-1">Facebook</p>
+          <p class="mb-0">Proterma SA de CV</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
