@@ -6,6 +6,35 @@
     <title>Contacto - Proterma</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <style>
+        .form-control,
+        .form-select,
+        textarea.form-control {
+            border-bottom: 2px solid transparent;
+            transition: border-color .25s ease, box-shadow .25s ease, background-color .25s ease;
+        }
+
+        .form-control:focus,
+        .form-select:focus,
+        textarea.form-control:focus {
+            outline: 0;
+            border-bottom-color: #c9a56a;
+            background-color: #fff5e6;
+            box-shadow: 0 0 0 0.25rem rgba(201, 165, 106, 0.22);
+        }
+
+        .form-control.touched:valid,
+        .form-select.touched:valid,
+        textarea.form-control.touched:valid {
+            border-bottom-color: #198754;
+        }
+
+        .form-control.touched:invalid,
+        .form-select.touched:invalid,
+        textarea.form-control.touched:invalid {
+            border-bottom-color: #dc3545;
+        }
+    </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
     
@@ -48,45 +77,47 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     
-                    <div class="card shadow-sm border-0" style="background-color: #ffffff;">
+                    <div class="card shadow-lg border border-1" style="background-color: #cb98454d; border-color: rgba(0,0,0,.08);">
                         <div class="card-body p-md-5">
                             
                             <h2 class="display-6 fw-bold mb-3" style="color: #000000;">Contáctanos</h2>
                             <p class="text-muted mb-5">Para brindarte atención personalizada compártenos tus datos y pronto te contactaremos.</p>
                             
-                            <form>
+                            <form class="needs-validation" novalidate>
                                 <div class="row g-4"> 
                                     
                                     <div class="col-md-6">
                                         <label for="nombre" class="form-label text-muted">Nombre y Apellido <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control bg-light border-0 py-2" id="nombre" required>
+                                        <input type="text" class="form-control bg-light border-0 py-2" id="nombre" name="nombre" required maxlength="100" placeholder="Tu nombre completo" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñÜü'’\-\s]+$" title="Solo letras, espacios, guiones y apóstrofes válidos en nombres propios">
+                                        <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
                                     </div>
                                     
                                     <div class="col-md-6">
                                         <label for="telefono" class="form-label text-muted">Teléfono <span class="text-danger">*</span></label>
-                                        <input type="tel" class="form-control bg-light border-0 py-2" id="telefono" required>
+                                        <input type="tel" class="form-control bg-light border-0 py-2" id="telefono" name="telefono" required maxlength="10" pattern="[0-9]{10}" inputmode="numeric" placeholder="10 dígitos" title="Solo se permiten 10 dígitos numéricos">
+                                        <div class="invalid-feedback">Ingresa un teléfono válido de 10 dígitos.</div>
                                     </div>
                                     
                                     <div class="col-md-6">
                                         <label for="email" class="form-label text-muted">Email <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control bg-light border-0 py-2" id="email" required>
+                                        <input type="email" class="form-control bg-light border-0 py-2" id="email" name="email" required autocomplete="email" placeholder="correo@ejemplo.com" minlength="6" maxlength="256" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" title="Usa una dirección de correo válida sin espacios ni caracteres especiales inválidos">
+                                        <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
                                     </div>
                                     
                                     <div class="col-md-6">
                                         <label for="interes" class="form-label text-muted">Interesado en</label>
-                                        <select class="form-select bg-light border-0 py-2" id="interes">
-                                            <option selected disabled>Líneas</option>
+                                        <select class="form-select bg-light border-0 py-2" id="interes" name="interes">
+                                            <option selected disabled>Selecciona</option>
                                             <option value="mesas">Mesas</option>
                                             <option value="escritorios">Escritorios</option>
                                             <option value="bancos">Bancos</option>
-                                            <option value="zapateros">Zapateros</option>
                                             <option value="pedido_especial">Pedido Personalizado</option>
                                         </select>
                                     </div>
                                     
                                     <div class="col-12">
-                                        <label for="mensaje" class="form-label text-muted">Tu mensaje</label>
-                                        <textarea class="form-control bg-light border-0" id="mensaje" rows="4"></textarea>
+                                        <label for="mensaje" class="form-label text-muted">Tu mensaje (opcional)</label>
+                                        <textarea class="form-control bg-light border-0" id="mensaje" name="mensaje" rows="4" placeholder="¿Qué necesitas? Máximo 500 caracteres." maxlength="500"></textarea>
                                     </div>
                                     
                                     <div class="col-12 mt-4 text-center text-md-start">
@@ -111,5 +142,37 @@
     </footer>
     
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var formulario = document.querySelector('form.needs-validation');
+            var telefonoInput = document.getElementById('telefono');
+            var controles = formulario.querySelectorAll('input.form-control, textarea.form-control, select.form-select');
+
+            telefonoInput.addEventListener('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
+            });
+
+            controles.forEach(function (control) {
+                control.addEventListener('blur', function () {
+                    this.classList.add('touched');
+                });
+
+                control.addEventListener('input', function () {
+                    if (this.classList.contains('touched')) {
+                        this.classList.toggle('is-valid', this.checkValidity());
+                        this.classList.toggle('is-invalid', !this.checkValidity());
+                    }
+                });
+            });
+
+            formulario.addEventListener('submit', function (event) {
+                if (!formulario.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                formulario.classList.add('was-validated');
+            }, false);
+        });
+    </script>
 </body>
 </html>
