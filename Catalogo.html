@@ -50,24 +50,27 @@
                 <p class="text-muted">Explora nuestra colección completa de mobiliario minimalista.</p>
             </div>
             
-            <ul class="nav justify-content-center mb-5 gap-2 gap-md-4">
+            <ul class="nav justify-content-center mb-5 gap-2 gap-md-4" id="filter-menu">
                 <li class="nav-item">
-                    <a class="nav-link active rounded-pill px-4 text-white" style="background-color: #5D4037;" href="#">Todo</a>
+                    <a class="filter-btn nav-link active rounded-pill px-4 text-white" style="background-color: #5D4037;" href="#" data-filter="todo">Todo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Mesas</a>
+                    <a class="filter-btn nav-link text-muted rounded-pill px-4 border" href="#" data-filter="mesas">Mesas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Escritorios</a>
+                    <a class="filter-btn nav-link text-muted rounded-pill px-4 border" href="#" data-filter="escritorios">Escritorios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted rounded-pill px-4 border" href="#">Bancos</a>
+                    <a class="filter-btn nav-link text-muted rounded-pill px-4 border" href="#" data-filter="bancos">Bancos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="filter-btn nav-link text-muted rounded-pill px-4 border" href="#" data-filter="zapateros">Zapateros</a>
                 </li>
             </ul>
 
             <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" id="cuerpo-cards">
                 
-                <div class="col">
+                <div class="col product-card" data-category="mesas">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/mesa1.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -82,7 +85,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="escritorios">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/escritorio1.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -97,7 +100,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="bancos">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/banco1.jpg" class="card-img-top p-3" alt="Banco de bar natural nórdico" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -112,7 +115,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="mesas">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/escritorio3.jpg" class="card-img-top p-3" alt="Escritorio de oficina" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -127,7 +130,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="bancos">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/banco2.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -142,7 +145,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="mesas">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/mesa4.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
                         <div  class="card-body bg-light shadow border-0">
@@ -157,7 +160,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="mesas">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/mesa3.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
                         <div  class="card-body bg-light shadow border-0">
@@ -172,7 +175,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="bancos">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/banco3.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
@@ -187,9 +190,39 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col product-card" data-category="bancos">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/banco4.jpg" class="card-img-top p-3" alt="Mesa de Comedor Rectangular Robusta" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Banco de madera sencillo</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Silla de oficina.<br>
+                                <strong>Medida:</strong> 50 x 50 x 80 cm.<br>
+                                <strong>Material:</strong> Madera maciza de nogal.<br>
+                                <strong>Acabados:</strong> Mate natural o barniz.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="escritorios">
                     <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
                         <img src="images/Productos/escritorio2.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Escritorio de casa</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Classic home con refuerzos estructurales.<br>
+                                <strong>Medida:</strong> 120 x 60 x 145 cm.<br>
+                                <strong>Material:</strong> Madera de pino estufada.<br>
+                                <strong>Acabados:</strong> Tinte color caoba mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="escritorios">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/escritorio3.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
                         <div class="card-body bg-light shadow border-0">
                             <h5 class="card-title fw-bold" style="color: #5D4037;">Escritorio de trabajo</h5>
                             <p class="card-text text-muted small mt-3">
@@ -202,16 +235,121 @@
                     </article>
                 </div>
 
+                <div class="col product-card" data-category="escritorios">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/escritorio4.jpg" class="card-img-top p-3" alt="Mesa de trabajo con librero" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Escritorio con estante</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Classic home con refuerzos estructurales.<br>
+                                <strong>Medida:</strong> 120 x 60 x 145 cm.<br>
+                                <strong>Material:</strong> Madera de pino estufada.<br>
+                                <strong>Acabados:</strong> Tinte color caoba mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero1.jpg" class="card-img-top p-3" alt="Zapatero de madera natural de 3 niveles" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Zapatero de madera de 3 niveles</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Diseño moderno y minimalista, perfecto para el dormitorio.<br>
+                                <strong>Medida:</strong> 80 x 30 x 45 cm.<br>
+                                <strong>Material:</strong> Madera de haya estufada.<br>
+                                <strong>Acabados:</strong> Aceite natural mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero2.jpg" class="card-img-top p-3" alt="Estante zapatero de bambú de 4 niveles" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Estante zapatero de bambú (4 niveles)</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Estilo clásico y funcional para entradas organizadas.<br>
+                                <strong>Medida:</strong> 100 x 28 x 70 cm.<br>
+                                <strong>Material:</strong> Bambú natural.<br>
+                                <strong>Acabados:</strong> Barniz protector satinado.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero3.jpg" class="card-img-top p-3" alt="Organizador de zapatos alto de madera" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Organizador de zapatos alto (6 niveles)</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Máxima capacidad en un diseño vertical estrecho.<br>
+                                <strong>Medida:</strong> 68 x 25 x 90 cm.<br>
+                                <strong>Material:</strong> Madera de pino estufada.<br>
+                                <strong>Acabados:</strong> Tinte color miel satinado.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero4.jpg" class="card-img-top p-3" alt="Gabinete zapatero modular de 12 cubos" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Gabinete zapatero modular de 12 cubos</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Solución de almacenamiento flexible con compartimentos cuadrados.<br>
+                                <strong>Medida:</strong> 75 x 30 x 180 cm.<br>
+                                <strong>Material:</strong> MDF con chapa de madera de roble gris.<br>
+                                <strong>Acabados:</strong> Acabado texturizado gris mate.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero5.jpg" class="card-img-top p-3" alt="Estante zapatero de madera de rejilla de 3 niveles" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Zapatero de madera de rejilla (3 niveles)</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Diseño abierto y ventilado, ideal para mantener el calzado fresco y accesible.<br>
+                                <strong>Medida:</strong> 80 x 26 x 50 cm.<br>
+                                <strong>Material:</strong> Madera de pino natural.<br>
+                                <strong>Acabados:</strong> Sin barniz, acabado natural liso.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col product-card" data-category="zapateros">
+                    <article class="card h-100 shadow border-0" style="background-color: rgb(236, 234, 234);">
+                        <img src="images/Productos/zapatero6.jpg" class="card-img-top p-3" alt="Armario zapatero cerrado de gran capacidad con dos puertas" style="height: 250px; object-fit: contain;">
+                        <div class="card-body bg-light shadow border-0">
+                            <h5 class="card-title fw-bold" style="color: #5D4037;">Armario zapatero de gran capacidad</h5>
+                            <p class="card-text text-muted small mt-3">
+                                <strong>Descripción:</strong> Mueble cerrado con múltiples estantes interiores para organizar el calzado de manera discreta.<br>
+                                <strong>Medida:</strong> 85 x 35 x 120 cm.<br>
+                                <strong>Material:</strong> Melamina de alta resistencia.<br>
+                                <strong>Acabados:</strong> Texturizado color nogal oscuro.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </div>
     </main>
 
     <footer id="menu-fin">
         <div class="container text-center text-secondary">
-            <p class="mb-0">&copy; 2024 Proterma SA de CV - Todos los derechos reservados</p>
+            <p class="mb-0">&copy; 2026 Proterma SA de CV - Todos los derechos reservados</p>
         </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/botonesCatalogo.js"></script>
 </body>
 </html>

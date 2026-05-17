@@ -123,3 +123,16 @@ body {
     margin-top: 20px;*/
     height: 40%; /* Es mejor usar 'auto' en lugar de un % fijo para que sea responsivo */
 }
+
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+    cursor: default; /* Asegura que el cursor sea la flecha normal */
+}
+
+/* El efecto de levantarse se mantiene igual */
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(93, 64, 55, 0.15) !important;
+    border-color: #5D4037;
+}
